@@ -1,0 +1,293 @@
+*{
+	margin: 0px;
+	padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+	height: 100%;
+}
+
+/*Clear usado para limpar definicoes do float*/
+.clear{
+  clear: both;
+}
+
+header{
+  /*background-color: rgb(200, 200, 200);*/
+  background: linear-gradient(to bottom, #C8C6C1, #E1E0DD);
+  padding: 10px 2% 30px 2%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo1{
+  float: left;
+  width: 160px;
+  height: 60px;
+  background-image: url('../images/logo1.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo2{
+  float: right;
+  width: 160px;
+  height: 60px;
+  background-image: url('../images/logo22.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+section.cover-form{
+  width: 100%;
+}
+
+.bg{
+  position: relative;
+  height: 480px;
+  background-image: url('../images/bg-form.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form-container{
+  position: absolute;
+  right: 30px;
+  top: -5%;
+  width: 400px;
+  height: 110%;
+  box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
+  background-color: rgba(234, 236, 239, 0.8);
+}
+
+.form-container h2{
+  font-weight: normal;
+  padding: 20px 15px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: rgb(234, 236, 239);
+}
+
+.form-container form{
+  padding: 30px;
+}
+
+.form-container p{
+  font-size: 14px;
+  color: #525252;
+}
+
+.form-container form input{
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 10px;
+}
+
+.form-wraper:not(:first-child){
+  margin-top: 35px;
+}
+
+.form-wraper:last-child{
+  margin-top: 20px;
+}
+
+.form-wraper input[type=submit]{
+  background-color: #033C50;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  height: 60px;
+  border: 0;
+  cursor: pointer;
+}
+
+.icon-arrow{
+  width: 50px;
+  height: 50px;
+
+  position: relative;
+  top: -25px;
+  left: 50%;
+  margin-left: -25px;
+
+  background-image: url('../images/arrow_down.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+section.chamada, section.chamada2{
+  width: 100%;
+  text-align: center;
+  margin-top: -50px;
+  z-index: 1;
+}
+
+section.chamada2{
+  margin-top: 0;
+}
+
+section.chamada2 .container h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+section.chamada2 .container p{
+  text-transform: uppercase;
+  text-decoration: underline;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+section.chamada h2, section.chamada2 h2{
+  width: 96%;
+  max-width:  700px;
+  display: inline-block;
+  color: black;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+section.chamada p, section.chamada2 p{
+  width: 96%;
+  color: black;
+  max-width: 1200px;
+  font-size: 17px;
+  padding: 10px 5%;
+  display: inline-block;
+}
+
+section.chamada .container{
+  padding: 50px 0;
+  background-color: #e7ecef;
+}
+
+section.chamada2 .container{
+  padding: 50px 0;
+  background-color: #e7ecef;
+}
+
+.flex-mosaico{
+  display: flex;
+}
+
+.foto-mosaico{ /*item-1-mosaico*/
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+}
+
+.texto-mosaico{ /*item-2-mosaico*/
+  width: 40%;
+  padding: 60px 40px;
+  font-size: 15px;
+  background-color: #e4f3ff;
+}
+
+footer{
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #E1E0DD, #C8C6C1);
+}
+
+footer img{
+  width: 120px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 960px){
+  .bg{
+    text-align: center;
+    padding: 40px 0;
+    height: auto;
+  }
+
+  .form-container{
+    height: auto; 
+    width: 96%;
+    max-width: 400px;
+    position: static;
+    display: inline-block;
+
+  }
+}
+
+@media screen and (max-width: 768px){
+  .flex-mosaico{
+    display: block;
+  }
+
+  .foto-mosaico{
+    padding-top: 40%;
+    width: 100%;
+  }
+
+  .texto-mosaico{
+    text-align: justify;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 510px){
+  header{
+    text-align: center;
+  }
+
+  .logo1, .logo2{
+    margin-top: 10px;
+    display: inline-block;
+    float: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
