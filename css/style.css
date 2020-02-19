@@ -15,7 +15,6 @@ html, body{
 }
 
 header{
-  /*background-color: rgb(200, 200, 200);*/
   background: linear-gradient(to bottom, #C8C6C1, #E1E0DD);
   padding: 10px 2% 30px 2%;
   max-width: 1200px;
@@ -212,13 +211,13 @@ footer{
   background: linear-gradient(to bottom, #E1E0DD, #C8C6C1);
 }
 
+footer p{
+  margin-top: 10px;
+}
+
 footer img{
   width: 120px;
 }
-
-
-
-
 
 
 @media screen and (max-width: 960px){
@@ -234,7 +233,6 @@ footer img{
     max-width: 400px;
     position: static;
     display: inline-block;
-
   }
 }
 
